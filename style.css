@@ -14,6 +14,7 @@ header {
 
 /* Corpo pagina */
 body {
+  width: 100%;
   position: relative;
   font-family: 'Poppins', sans-serif;
   color: #eee;
