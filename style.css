@@ -124,8 +124,12 @@ header {
 
 /* Sezioni */
 .section {
+  position: relative;
+  width: 100%;
   max-width: 900px;
-  margin: 40px auto;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9; /* mantiene proporzioni video */
+  overflow: hidden;
   padding: 0 20px;
 }
 
