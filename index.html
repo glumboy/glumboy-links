@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Glum Boy</title>
+
+  <!-- Collegamento CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+  <!-- Header / Menu -->
+  <header>
+    <div class="logo">Glum Boy</div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#bio">Biografia</a></li>
+        <li><a href="#music">Musica</a></li>
+        <li><a href="#social">Social</a></li>
+      </ul>
+    </nav>
+
+    <div id="spotifyWidget" class="align-left">
+  <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/6TqhusakE7g4cLqGGglqT0?utm_source=generator" 
+  width="280" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; 
+  clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+  </div>
+
+  </header>
+
+
+  <div>
+  <!-- Home -->
+  <section id="home" class="section home">
+    <img src="GlumBoy.jpg" alt="Glum Boy" class="profile-img">
+    <h1>Glum Boy</h1>
+    <p>Artista, producer, imprenditore</p>
+  </section>
+  </div>
+
+
+  <!-- Biografia -->
+  <section id="bio" class="section">
+    <h2>Biografia</h2>
+    <p>Nato a Pozzuoli, in provincia di Napoli, Diego D’Avino, conosciuto artisticamente come Glum Boy, ha vissuto un’infanzia segnata da continui cambiamenti di città e scuole, dovuti a una difficile situazione familiare e alle adozioni. Questa instabilità però non ha mai spento la sua voglia di esprimersi, e già dalla terza elementare, grazie all’incontro con la musica di Sfera Ebbasta, è nato in lui il desiderio di fare musica.</p>
+
+    <p>A soli 9 anni, curioso e determinato, Diego iniziò a guardare tutorial su YouTube per creare i suoi primi beat con un tablet, dando così il via al suo percorso nella produzione musicale. Nei primi anni si dedicò principalmente a produzioni dark e a creare basi per altri artisti, ma crescendo la sua passione si è concentrata sull’hip hop e il rap, portandolo a scrivere e registrare le sue canzoni.</p>
+
+    <p>A 13 anni la svolta: incontra Z3f, un altro giovane artista con cui instaura un legame profondo sia umano che musicale. Da allora collaborano costantemente, crescendo insieme nella scena. Tra le collaborazioni più significative, c’è quella con YoungM4tt nel brano “Icon” dell’album Unknown Stars. Il progetto più importante di Glum Boy finora è “T Penz Ancor”, ma a breve è prevista l’uscita di un singolo che rappresenta una nuova tappa fondamentale nella sua carriera.</p>
+
+    <p>Il cuore pulsante della musica di Glum Boy è un tema che gli è molto caro: l’amore tossico e irresistibile, una lotta interiore continua che fa male ma a cui non si può rinunciare. Attraverso i suoi testi, Diego racconta questa complessità emotiva con sincerità e forza.</p>
+
+    <p>La strada non è stata facile: la mancanza di autostima ha rappresentato la sfida più dura, portandolo per un periodo lontano dalla musica e a fare uso di sostanze. Tuttavia, la sua voglia di riscatto è più forte che mai, e tra i suoi traguardi più importanti c’è l’esibizione in diretta televisiva nazionale su Smart Tv Italia.</p>
+
+    <p>Glum Boy non ha un punto d’arrivo, ma un obiettivo chiaro: non fermarsi mai. Tra 5 o 10 anni si vede al livello di grandi artisti internazionali come Travis Scott, pronto a portare la sua musica e la sua storia sempre più lontano.</p>
+  </section>
+
+  <!-- Musica -->
+  <section id="music" class="section dark">
+    <h2>Ascolta la mia musica</h2>
+    <div class="youtube-miniplayer">
+      <iframe 
+        src="https://www.youtube.com/embed/D4HQX9PqKKU?autoplay=1&mute=1&controls=1&rel=0"
+        allow="autoplay"
+        allowfullscreen>
+      </iframe>
+      <canvas id="audioVisualizer" width="560" height="100" style="display: block; margin-top: 10px; border-radius: 8px;"></canvas>
+    </div>
+  </section>
+
+  <!-- Spoiler Track -->
+  <div id="floatingPlayer" class="spoiler-audio-wrapper">
+    <div class="spoiler-controls">
+      <button id="playAudioBtn" class="spoiler-play-btn">
+        <span id="btnIcon">▶️</span>
+      </button>
+      <audio id="audioPlayer" src="KRYPTONITE MASTER.wav"></audio>
+    </div>
+  </div>
+
+  <script src="SpoilerPlayer.js"></script>
+
+  <!-- Social -->
+  <section id="social" class="section">
+    <h2>Seguimi</h2>
+    <div class="social-links">
+      <a href="https://www.instagram.com/glumboyofficial" target="_blank">
+        <img src="instagram.png" alt="Instagram"> Instagram
+      </a>
+      <a href="https://www.youtube.com/@glumboyofficial" target="_blank">
+        <img src="youtube.png" alt="YouTube"> YouTube
+      </a>
+      <a href="https://bit.ly/GlumBoy" target="_blank">
+        <img src="spotify.png" alt="Spotify"> Spotify
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="padding: 20px; background-color: #111; color: #aaa; font-size: 13px; text-align: center; line-height: 1.6;">
+    <div>&copy; 2025 Glum Boy. Tutti i diritti riservati.</div>
+    <div style="font-size: 12px; color: #777; margin-top: 5px;">
+      Info & Booking: +39 376 211 2103 • 
+      <a href="mailto:glumboyofficial@gmail.com" style="color: #777; text-decoration: none;">glumboyofficial@gmail.com</a>
+    </div>
+  </footer>
+
+  <!-- Script principali -->
+  <script src="main.js"></script>
+  <script src="spoilerPlayer.js"></script>
+
+
+  <!-- Overlay -->
+<div id="overlay"></div>
+
+  <!-- Popup Kryptonite -->
+  <div id="kryptonitePopup" class="popup-glum" style="display: none;">
+    <div class="popup-content-glum">
+      <span class="close-glum" onclick="closeKryptonitePopup()">×</span>
+      <h3>🔥 Ascolta ora il nuovo singolo "Kryptonite"</h3>
+      <p>Glum Boy & Z3f ti portano in un nuovo viaggio.</p>
+      <button onclick="window.open('https://open.spotify.com/intl-it/track/3BH2haEE5QOUf9swdJeSp9?si=733f54069ea94a9c', '_blank')">
+        Vai su Spotify
+      </button>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const popup = document.getElementById("kryptonitePopup");
+      const closeBtn = document.querySelector(".close-glum");
+
+      function showKryptonitePopup() {
+        popup.style.display = "flex";
+      }
+
+      function closeKryptonitePopup() {
+        popup.style.display = "none";
+      }
+
+      showKryptonitePopup();
+      setInterval(showKryptonitePopup, 120000);
+      closeBtn.addEventListener("click", closeKryptonitePopup);
+    });
+  </script>
+
+</body>
+</html>
